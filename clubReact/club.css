@@ -1,0 +1,200 @@
+@font-face {
+    font-family: 'ZCOOLKuaiLe';
+    src: url(fonts/ZCOOLKuaiLe-Regular.ttf) format('truetype');
+}
+
+header h1 {
+    font-family: 'ZCOOLKuaiLe', sans-serif;
+    text-align: center;
+}
+
+header {
+    padding-top: 70px;
+}
+
+h2 {
+    font-family: 'ZCOOLKuaiLe', sans-serif;
+}
+
+nav {
+    background-color: black;
+    border: 5px solid chocolate;
+    padding: 10px;
+    margin: auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 18px;
+    color: antiquewhite;
+}
+
+nav a:hover {
+    color: crimson;
+}
+
+nav .active a {
+    background-color: olivedrab;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+main {
+    background-color: whitesmoke;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+main p {
+    max-width: 75ch;
+}
+
+footer {
+    text-align: center;
+    font-size: 18px;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid black;
+}
+
+thead th:nth-child(1) {
+    width: 34%;
+}
+
+thead th:nth-child(2) {
+    width: 33%;
+}
+
+thead th:nth-child(3) {
+    width: 33%;
+}
+
+th, td {
+    padding: 10px;
+    letter-spacing: 1px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+tbody tr:nth-child(3n+1) {
+    background-color: red;
+}
+
+tbody tr:nth-child(3n+2) {
+    background-color:white;
+}
+
+tbody tr:nth-child(3n+3) {
+    background-color:blue;
+}
+
+thead {
+    background-color: black;
+    color: white;
+}
+
+table caption {
+    font-size: large;
+    font-weight: bold;
+}
+
+#mySvg {
+    background-color: white;
+    border: 2px solid gray;
+    margin: 10px;
+}
+
+.doodle {
+    background-color: aquamarine;
+    border: dashed ;
+    margin: 20px;
+    padding: 10px;
+    width: 400px;
+}
+
+input:valid {
+    background-color: rgb(147, 253, 147);
+}
+
+input:invalid {
+    background-color: rgb(245, 177, 177);
+}
+
+#ThanksDialog {
+    background-color: rgb(198, 253, 253);
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: none;
+}
+
+#ThanksDialog.show {
+    display: block;
+    height: 100vh;
+    width: 100vw;
+}
+
+.message {
+    border: 2px solid blue;
+    width: 20em;
+    margin: auto;
+    margin-top: 20vh;
+    padding: 1em;
+    background-color: rgb(255, 190, 111);
+}
+
+.application {
+    background-color: lavender;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-row-gap: 0.5em;
+    grid-column-gap: 0.5em;
+    border: dashed rgb(85, 1, 1);
+    border-radius: 1em;
+    padding: 2.0em;
+}
+
+.application label {
+    justify-self: end;
+    font-style: italic;
+}
+
+.application button {
+    grid-column-start: 2;
+    background-color: khaki;
+}
+
+.adminActivity {
+    width: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-row-gap: 0.5em;
+    grid-column-gap: 0.5em;
+    border: dashed rgb(85, 1, 1);
+    padding: 1em;
+}
+
+.adminActivity label {
+    justify-self: end;
+    font-style: italic;
+}

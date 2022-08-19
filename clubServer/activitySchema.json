@@ -1,0 +1,28 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://domain.com/activity.schema.json",
+    "title": "Activity",
+    "description": "Activity added to the club",
+    "type": "object",
+    "properties": {
+        "name": {
+            "description": "The name of activity",
+            "type": "string"
+        },
+        "dates": {
+            "description": "The dates of activity",
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "minItems": 1,
+            "uniqueItems": true
+        },
+        "description": {
+            "description": "The description of activity",
+            "type": "string"
+        }
+    },
+    "required": ["name", "dates", "description"],
+    "additionalProperties": false 
+}

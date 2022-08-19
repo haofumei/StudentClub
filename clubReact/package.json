@@ -1,0 +1,23 @@
+{
+  "name": "clubReact",
+  "version": "1.0.0",
+  "description": "",
+  "default": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel",
+    "build": "parcel build --public-url ./"
+  },
+  "source": "index.html",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@parcel/transformer-image": "^2.0.0-rc.0",
+    "parcel": "^2.0.1"
+  }
+}
